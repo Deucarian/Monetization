@@ -7,6 +7,10 @@
   "author": {
     "name": "Deucarian"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deucarian/Monetization.git"
+  },
   "license": "MIT",
   "keywords": [
     "deucarian",
