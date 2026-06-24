@@ -1,0 +1,20 @@
+{
+  "name": "com.deucarian.monetization",
+  "version": "0.1.0",
+  "displayName": "Deucarian Monetization",
+  "description": "SDK-free monetization placement abstractions, mock/no-op ad providers, pacing policies, entitlements, consent, and rewarded claim identity for Deucarian games.",
+  "unity": "6000.3",
+  "author": {
+    "name": "Deucarian"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deucarian",
+    "monetization",
+    "rewarded",
+    "interstitial",
+    "iap",
+    "mock"
+  ],
+  "dependencies": {}
+}
