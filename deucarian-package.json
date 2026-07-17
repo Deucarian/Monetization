@@ -1,12 +1,15 @@
 {
   "packageId": "com.deucarian.monetization",
   "displayName": "Deucarian Monetization",
+  "samplePolicy": "compiled-example",
   "ownedCapabilities": [],
   "runtimeAssemblies": [
     "Deucarian.Monetization"
   ],
   "editorAssemblies": [],
-  "sampleAssemblies": [],
+  "sampleAssemblies": [
+    "Deucarian.Monetization.Samples"
+  ],
   "testAssemblies": [
     "Deucarian.Monetization.Tests"
   ],
@@ -14,6 +17,6 @@
   "optionalVersionDefinedDependencies": [],
   "allowedDirectDebugCalls": [],
   "allowedDirectUnityObjectLifetimeCalls": [],
-  "expectedSamplesRoot": "",
+  "expectedSamplesRoot": "Samples~",
   "selfContainedException": "SDK-free monetization abstractions are intentionally dependency-free so templates and products can compose provider adapters explicitly."
 }

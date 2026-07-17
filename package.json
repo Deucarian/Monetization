@@ -1,6 +1,6 @@
 {
   "name": "com.deucarian.monetization",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Deucarian Monetization",
   "description": "SDK-free monetization placement abstractions, mock/no-op ad providers, pacing policies, entitlements, consent, and rewarded claim identity for Deucarian games.",
   "unity": "6000.3",
@@ -20,5 +20,12 @@
     "iap",
     "mock"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Rewarded Claim Primer",
+      "description": "Pure C# example showing idempotent rewarded-claim handling without an SDK.",
+      "path": "Samples~/RewardedClaimPrimer"
+    }
+  ]
 }
