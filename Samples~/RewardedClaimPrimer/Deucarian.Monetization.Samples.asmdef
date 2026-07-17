@@ -1,0 +1,16 @@
+{
+  "name": "Deucarian.Monetization.Samples",
+  "rootNamespace": "Deucarian.Monetization.Samples",
+  "references": [
+    "Deucarian.Monetization"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}
