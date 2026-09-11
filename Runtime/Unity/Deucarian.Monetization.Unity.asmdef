@@ -1,23 +1,17 @@
 {
-  "name": "Deucarian.Monetization.Tests",
-  "rootNamespace": "Deucarian.Monetization.Tests",
+  "name": "Deucarian.Monetization.Unity",
+  "rootNamespace": "Deucarian.Monetization.Unity",
   "references": [
     "Deucarian.Monetization",
-    "Deucarian.Monetization.Unity",
     "Deucarian.Diagnostics"
   ],
-  "includePlatforms": [
-    "Editor"
-  ],
+  "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
   "overrideReferences": false,
   "precompiledReferences": [],
-  "autoReferenced": false,
+  "autoReferenced": true,
   "defineConstraints": [],
   "versionDefines": [],
-  "optionalUnityReferences": [
-    "TestAssemblies"
-  ],
   "noEngineReferences": false
 }
