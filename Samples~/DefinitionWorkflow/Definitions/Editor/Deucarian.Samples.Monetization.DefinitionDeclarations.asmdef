@@ -1,0 +1,5 @@
+{
+  "name": "Deucarian.Samples.Monetization.DefinitionDeclarations",
+  "references": ["Deucarian.Editor", "Deucarian.Monetization.Editor"],
+  "includePlatforms": ["Editor"]
+}

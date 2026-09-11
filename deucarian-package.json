@@ -11,7 +11,9 @@
     "Deucarian.Monetization.Editor"
   ],
   "sampleAssemblies": [
-    "Deucarian.Monetization.Samples"
+    "Deucarian.Monetization.Samples",
+    "Deucarian.Monetization.Unity.Samples.DefinitionWorkflow",
+    "Deucarian.Samples.Monetization.DefinitionDeclarations"
   ],
   "testAssemblies": [
     "Deucarian.Monetization.Tests",
