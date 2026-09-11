@@ -20,7 +20,10 @@
     "iap",
     "mock"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "com.deucarian.editor": "1.10.8",
+    "com.deucarian.diagnostics": "0.2.3"
+  },
   "samples": [
     {
       "displayName": "Rewarded Claim Primer",

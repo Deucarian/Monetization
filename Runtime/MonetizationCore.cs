@@ -299,6 +299,10 @@ namespace Deucarian.Monetization
             return result;
         }
 
+        /// <summary>Checks configuration without consuming pacing state or calling the provider.</summary>
+        public bool ContainsPlacement(MonetizationPlacementId placementId, MonetizationPlacementKind kind) =>
+            _policies.TryGetValue(placementId, out var policy) && policy.Kind == kind;
+
         private bool TryGetPolicy(
             MonetizationPlacementId placementId,
             MonetizationPlacementKind kind,
