@@ -1,0 +1,7 @@
+{
+  "name": "Deucarian.Monetization.Unity.Samples.DefinitionWorkflow",
+  "references": [
+    "Deucarian.Monetization",
+    "Deucarian.Monetization.Unity"
+  ]
+}

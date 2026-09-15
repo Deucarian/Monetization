@@ -10,6 +10,25 @@ namespace Deucarian.Monetization.Tests
         private static readonly MonetizationPlacementId AlternateInterstitialPlacement = new MonetizationPlacementId("interstitial.test.alternate");
 
         [Test]
+        public void HostPreservesClaimIdempotencyAndRejectsWrongPlacementKind()
+        {
+            var go = new UnityEngine.GameObject("ads");
+            try
+            {
+                var host = go.AddComponent<Deucarian.Monetization.Unity.MonetizationHost>();
+                host.Configure(CreateSession(), () => Context(nowSeconds: 10, inCombat: false, terminalRuns: 1));
+                var claim = new RewardClaimId("claim.host");
+                Assert.That(host.ShowRewarded(new HostRewardKey(), claim).Succeeded, Is.True);
+                Assert.That(host.ShowRewarded(new HostRewardKey(), claim).Succeeded, Is.False);
+                Assert.That(Assert.Throws<InvalidOperationException>(() => host.ShowInterstitial(new WrongPlacementKey())).Message,
+                    Does.Contain("Interstitial"));
+            }
+            finally { UnityEngine.Object.DestroyImmediate(go); }
+        }
+        private sealed class HostRewardKey : RewardedPlacementKey { public HostRewardKey() : base(RewardedPlacement.Value) { } }
+        private sealed class WrongPlacementKey : InterstitialPlacementKey { public WrongPlacementKey() : base(RewardedPlacement.Value) { } }
+
+        [Test]
         public void RewardedSuccessRecordsClaim()
         {
             MonetizationSession session = CreateSession();

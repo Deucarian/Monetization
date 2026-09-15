@@ -1,5 +1,15 @@
 # Deucarian Monetization
 
+## Typed definition workflow
+
+Placement definitions own pacing and gating defaults. This scene uses the package mock provider; no real advertisements or purchases take place.
+
+Start with the [Definition Workflow walkthrough](Documentation~/DefinitionWorkflow.md).
+Import **Definition Workflow** in Package Manager for a configured sample scene
+and short caller scripts. Definitions can be edited as assets or editable C# declarations; generated keys
+work in code and Inspector dropdowns.
+
+
 `com.deucarian.monetization` defines SDK-free monetization primitives for Deucarian mobile game templates and products.
 
 It owns placement IDs, rewarded and interstitial ad abstractions, no-op and mock providers, pacing policies, consent/availability gates, no-ads entitlement checks, and rewarded claim identity.
@@ -63,3 +73,7 @@ git diff --check
 ## License
 
 MIT. See `LICENSE.md`.
+
+## Simple typed usage
+
+See [Simple usage](Documentation~/SimpleUsage.md) for the short caller, Inspector selections and one-time scoped setup.

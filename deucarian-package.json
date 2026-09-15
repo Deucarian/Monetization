@@ -4,16 +4,25 @@
   "samplePolicy": "compiled-example",
   "ownedCapabilities": [],
   "runtimeAssemblies": [
-    "Deucarian.Monetization"
+    "Deucarian.Monetization",
+    "Deucarian.Monetization.Unity"
   ],
-  "editorAssemblies": [],
+  "editorAssemblies": [
+    "Deucarian.Monetization.Editor"
+  ],
   "sampleAssemblies": [
-    "Deucarian.Monetization.Samples"
+    "Deucarian.Monetization.Samples",
+    "Deucarian.Monetization.Unity.Samples.DefinitionWorkflow",
+    "Deucarian.Samples.Monetization.DefinitionDeclarations"
   ],
   "testAssemblies": [
-    "Deucarian.Monetization.Tests"
+    "Deucarian.Monetization.Tests",
+    "Deucarian.Monetization.Tests.PlayMode"
   ],
-  "requiredDependencies": [],
+  "requiredDependencies": [
+    "com.deucarian.editor",
+    "com.deucarian.diagnostics"
+  ],
   "optionalVersionDefinedDependencies": [],
   "allowedDirectDebugCalls": [],
   "allowedDirectUnityObjectLifetimeCalls": [],
